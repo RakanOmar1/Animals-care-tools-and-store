@@ -1,0 +1,73 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppContainer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Logout Button -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:padding="8dp"
+        android:weightSum="2">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            style="@style/LogoutButtonStyle"
+            android:layout_width="47dp"
+            android:layout_height="55dp"
+            android:src="@drawable/back"
+            android:layout_marginEnd="8dp" />
+        <ImageButton
+            android:id="@+id/btnLogout"
+            style="@style/LogoutButtonStyle"
+            android:layout_width="47dp"
+            android:layout_height="55dp"
+            android:src="@drawable/logoutlast" />
+</LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/profileLogo"
+        style="@style/ProfileImageStyle"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logowb" />
+
+    <!-- Username -->
+    <TextView
+        android:id="@+id/username"
+        style="@style/DetailDescriptionTextStyle"
+        android:text="Username"
+        android:layout_gravity="center" />
+
+    <!-- Section Label -->
+    <TextView
+        style="@style/SectionLabelTextStyle"
+        android:text="Selected Items:" />
+
+    <!-- RecyclerView List of Selected Items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/selectedItemsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Total Price -->
+    <TextView
+        android:id="@+id/totalPrice"
+        style="@style/TotalPriceTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: JOD 0.00" />
+
+    <!-- Confirm Button -->
+    <Button
+        android:id="@+id/btnConfirmAll"
+        style="@style/PrimaryButtonStyle"
+        android:text="Confirm" />
+</LinearLayout>

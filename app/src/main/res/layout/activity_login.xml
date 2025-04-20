@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppContainer"
+    android:id="@+id/loginActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        style="@style/LogoImageStyle"
+        android:src="@drawable/logowb"
+        android:contentDescription="@string/app_logo" />
+
+    <EditText
+        android:id="@+id/ledtUsername"
+        style="@style/EditTextField"
+        android:hint="@string/enter_your_username"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:id="@+id/ledtPassword"
+        style="@style/EditTextField"
+        android:inputType="textPassword"
+        android:hint="@string/enter_your_password" />
+
+    <!-- Auto-login Checkbox -->
+
+    <CheckBox
+        android:id="@+id/checkbox_auto_login"
+        style="@style/CheckBoxStyle"
+        android:layout_marginTop="12dp"
+        android:text="@string/auto_login" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/PrimaryButtonStyle"
+        android:text="@string/btnlogin"
+        android:onClick="loginAction" />
+
+    <Button
+        android:id="@+id/btnsignlog"
+        style="@style/PrimaryButtonStyle"
+        android:text="@string/signup"/>
+
+    <TextView
+        android:id="@+id/loginerror"
+        style="@style/ErrorText"
+        android:text="" />
+</LinearLayout>

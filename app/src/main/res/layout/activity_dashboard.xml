@@ -1,0 +1,40 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dashboardActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="40dp"
+    tools:context=".DashBoardActivity">
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        style="@style/HeaderLayoutStyle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/profileButton"
+            style="@style/ProfileButtonStyle"
+            android:contentDescription="Profile icon"
+            android:src="@drawable/logowb" />
+
+        <EditText
+            android:id="@+id/searchBar"
+            style="@style/SearchBarStyle" />
+
+        <Spinner
+            android:id="@+id/filter"
+            style="@style/FilterSpinnerStyle" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        style="@style/RecyclerViewStyle"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

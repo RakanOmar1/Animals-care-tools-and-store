@@ -1,0 +1,35 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/DetailLayoutStyle">
+
+
+        <ImageView
+            android:id="@+id/detailImage"
+            style="@style/DetailImageStyle" />
+
+        <TextView
+            android:id="@+id/detailTitle"
+            style="@style/DetailTitleTextStyle"
+            android:text="Title" />
+
+        <TextView
+            android:id="@+id/detailDescription"
+            style="@style/DetailDescriptionTextStyle"
+            android:text="Product description" />
+
+        <TextView
+            android:id="@+id/detailPrice"
+            style="@style/DetailPriceTextStyle"
+            android:text="£0.00" />
+
+        <Button
+            android:id="@+id/addToCartFinal"
+            style="@style/PrimaryButtonStyle"
+            android:text="Add to Cart"
+            android:onClick="addToCard" />
+
+    </LinearLayout>
+</ScrollView>

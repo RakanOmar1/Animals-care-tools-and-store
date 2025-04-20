@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- res/values/colors.xml -->
+    <color name="backButtonBackground">#E0E0E0</color> <!-- Light gray background -->
+    <color name="backButtonTint">#212121</color>        <!-- Dark gray arrow icon -->
+
+</resources>

@@ -1,0 +1,37 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppContainer"
+    android:id="@+id/signupActivity"
+    android:gravity="center_horizontal"
+    tools:context=".SignupActivity">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        style="@style/LogoImageStyle"
+        android:src="@drawable/logowb"
+        android:contentDescription="@string/app_logo" />
+
+    <EditText
+        android:id="@+id/sedtUsername"
+        style="@style/EditTextField"
+        android:hint="@string/enter_your_username"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:id="@+id/sedtpassword"
+        style="@style/EditTextField"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnSignupSubmit"
+        style="@style/PrimaryButtonStyle"
+        android:text="@string/mainsign_up"
+        android:onClick="signupAction" />
+
+    <TextView
+        android:id="@+id/signuperror"
+        style="@style/ErrorText"
+        android:text="" />
+</LinearLayout>
